@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #f2f2f2;
+    font-family: calibri;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .trigger {
+    display: none;
+  }
+  
+  .slider, .slider-wrapper {
+    position: relative;
+    height: 250px;
+  }
+  
+  .slide {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  
+  .slide-img {
+    filter: brightness(50%);
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .slide-figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 30%;
+    width: calc(100% - 1rem);
+    color: white;
+    text-align: center;
+    left: 50%;
+  }
+  
+  .trigger:checked + .slide {
+    z-index: 6000;
+    opacity: 1;
+  }
+  
+  .slider-nav {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .slider-nav__item {
+    display: inline-block;
+  }
+  
+  .slider-nav__label {
+    font-size: 13px;
+    background-color: #333;
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
+  }
+  
+  .slider-nav__label:hover,
+  .slider-nav__label:active,
+  .slider-nav__label:focus {
+    background-color: gray;
+    color: black;
+  }
+  
+  @media only screen and (max-width: 880px) {
+    .page {
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+  
+  header nav {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  header nav .logo {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .logo {
+    padding-top: 10px;
+    
+  }
+
+  header nav .logo li {
+    padding: 0px 0px;
+  }
+  
+  header nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  header nav .links {
+    font-size: 0;
+    background-color: #ffffff;
+    width: 80%;
+    float: right;
+  }
+  
+  header nav .links li {
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    text-align: center;
+    height: 74px;
+    line-height: 74px;
+  }
+  
+  header nav .links li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #2f2f2f;
+    font-weight: bold;
+  }
+  
+  header nav .links li:hover a {
+    color: #fff;
+  }
+  
+  header nav .links li:hover {
+    background-color: #2f2f2f;
+  }
+  
+  header .header-image {
+    width: 100%;
+  }
+  
+  header .header-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header nav .logo li {
+      padding: 0px 0px;
+    }
+    header nav .logo {
+      width: 100%;
+    }
+    header nav .links {
+      width: 100%;
+      float: none;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    header nav .links li {
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  
+  main h1 {
+    margin: 20px 0px 30px 0px;
+  }
+  
+  main h2 {
+    margin: 20px 0px 40px 0px;
+  }
+  
+  main h3 {
+    margin: 10px 0px;
+  }
+  
+  main ul {
+    list-style-type: none;
+    font-size: 0;
+  }
+  
+  main ul li {
+    font-size: 16px;
+  }
+  
+  main {
+    margin: 40px 80px 0px 80px;
+  }
+  
+  main hr {
+    margin: 60px 0px;
+  }
+   
+  main .secti on-2,
+  .section-3 ul {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  
+  main .section-2 ul li {
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px;
+    vertical-align: top;
+    overflow-y: hidden;
+    
+  }
+  
+  main .section-2 ul li .section-2-img {
+    width: 100%;
+  }
+  
+  main .section-2 ul li .section-2-content {
+    width: 90%;
+  }
+  
+  main .section-2 ul li .section-2-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  main .section-3 ul li {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    overflow-y: hidden;
+    vertical-align: top;
+    margin-bottom: 2rem;
+  }
+  
+  main .section-3 ul li .section-3-vid {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-bottom: 1rem;
+  }
+  
+  main .section-3 ul li .section-3-content {
+    width: 90%;
+  }
+  
+  main .section-3 ul li .section-3-img img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  main .section-3 ul li .section-3-vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  main .section-3 ul li .section-3-content .button {
+    border: 2px solid royalblue;
+    padding: 8px;
+    width: 140px;
+    border-radius: 40px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+     tarnsition: background-color 4s;
+  }
+  
+  main .section-3 ul li .section-3-content .button:hover {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    main .section-2 ul li {
+      display: block;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    main .section-3 ul li {
+      display: block;
+      width: 100%;
+    }
+    main .section-3 ul li .section-3-content .button {
+      border: 2px solid royalblue;
+      padding: 8px;
+      width: 140px;
+      border-radius: 40px;
+      margin-top: 20px 0px 40px 0px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    main .section-3 ul li .section-3-content .button {
+      border: 2px solid royalblue;
+      padding: 4px;
+      width: 120px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    main {
+      margin: 40px 40px 0px 40px;
+    }
+  }
+  
+
+  footer {
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+  }
+  
