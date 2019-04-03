@@ -23,38 +23,83 @@
             </ul>
           </nav>
           
-          <div class="form-split">
-            <section class="col-1 form-one">
-              <div class="contact-form"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.909905721963!2d-118.46944204864617!3d34.02052348051951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb23130bb677%3A0x7f2a379764eac36c!2s2204+1%2F2+Pico+Blvd%2C+Santa+Monica%2C+CA+90405!5e0!3m2!1sen!2sus!4v1553659780433" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <form action="">
+ <section id="contact">
+  
+  <h1 class="section-header">CONTACT</h1>
+  
+  <div class="contact-wrapper">
+    
+    
+    
+    <form class="form-horizontal" role="form" method="post" action="contact.php">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+      
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://goo.gl/maps/9Lfijg8ZeUo" title="Find us in a map"></a>2204 1/2 Pico Blvd <br>
+            Santa Monica Ca 90405</span></i></li>
           
-            <input type="text" placeholder="Name" name="name" required>
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-310-452-5409" title="Give us a call">(310) 452-5409</a></span></i></li>
           
-            <input type="email" placeholder="Email" name="email" required>
-            
-            <input type="text" placeholder="Subject" name="name" required>
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send us an email">mindfulnestonpico@gmail.com</a></span></i></li>
           
-            <textarea placeholder="Message" name="message" required></textarea>
-          
-            <div class="captcha">
-              <input type="text" placeholder="Answer" name="captcha" required>
-              <input type="text" value="2 + 3 =" name="question"  required readonly>
-            </div>
-          
-            <input type="submit" value="Send">
-          
-          </form>
-              
-              </div>
-              </section>
-            
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr>
 
         
+
+      </div>
+    
+  </div>
+  
+</section>  
 
 
 
         <footer>
-          <p>© Copyright 2019 MindfulNest</p>
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED BY MINDFULNEST 2019</div>
+          
         </footer>
       </div>
     
